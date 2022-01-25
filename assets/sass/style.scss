@@ -190,3 +190,12 @@ hr {
         }
     }
 }
+
+.wku__footer {
+    background-color: $white;
+    padding: 20px 0;
+    border-top: 1px solid $border-clr;
+    .foot__text {
+        text-align: center;
+    }
+}
