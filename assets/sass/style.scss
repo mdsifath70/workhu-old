@@ -4,11 +4,18 @@
 @import './abstracts/reset';
 
 // Layout
+#page__wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
 .container {
     width: 100%;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 // reusable
@@ -48,6 +55,8 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .wku__brand {
@@ -62,7 +71,9 @@ hr {
     ul {
         display: flex;
         align-items: center;
-        gap: 20px;
+        column-gap: 20px;
+        row-gap: 10px;
+        flex-wrap: wrap;
         li {
             a {
                 color: $primary-clr;
@@ -95,7 +106,9 @@ hr {
     padding: 15px 0;
     ul {
         display: flex;
-        gap: 30px;
+        column-gap: 30px;
+        row-gap: 10px;
+        flex-wrap: wrap;
         li {
             a {
                 color: $white;
@@ -141,6 +154,15 @@ hr {
     font-family: $font-2;
     position: relative;
     background-color: $white;
+    .img__bx {
+        position: relative;
+        a {
+            display: block;
+            img {
+                width: 100%;
+            }
+        }
+    }
     .contents {
         padding: 40px 15px 0 15px;
         .title {
